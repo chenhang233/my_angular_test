@@ -1,0 +1,6 @@
+<p class="title">acomponent works!</p>
+<app-c [title]="title" (send)="fsend($event)">
+  <div a>这是a的投影</div>
+  <div b>这个是b的投影</div>
+  <app-bcomponent b></app-bcomponent>
+</app-c>

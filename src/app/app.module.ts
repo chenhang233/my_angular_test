@@ -7,9 +7,11 @@ import { AcomponentComponent } from './components/acomponent/acomponent.componen
 import { BcomponentComponent } from './components/bcomponent/bcomponent.component';
 import { NotFoundcomponentComponent } from './components/not-foundcomponent/not-foundcomponent.component';
 import { CComponent } from './components/c/c.component';
+import { HighLightDirective } from './directives/high-light.directive';
+import { UnlessDirective } from './directives/unless.directive';
 
 @NgModule({
-  declarations: [AppComponent, AcomponentComponent, BcomponentComponent, NotFoundcomponentComponent, CComponent],
+  declarations: [AppComponent, AcomponentComponent, BcomponentComponent, NotFoundcomponentComponent, CComponent, HighLightDirective, UnlessDirective],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],

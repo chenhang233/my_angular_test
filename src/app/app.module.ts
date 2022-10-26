@@ -9,11 +9,20 @@ import { NotFoundcomponentComponent } from './components/not-foundcomponent/not-
 import { CComponent } from './components/c/c.component';
 import { HighLightDirective } from './directives/high-light.directive';
 import { UnlessDirective } from './directives/unless.directive';
+import { APP_CONFIG, APP_DI_CONFIG } from './app.config';
 
 @NgModule({
-  declarations: [AppComponent, AcomponentComponent, BcomponentComponent, NotFoundcomponentComponent, CComponent, HighLightDirective, UnlessDirective],
+  declarations: [
+    AppComponent,
+    AcomponentComponent,
+    BcomponentComponent,
+    NotFoundcomponentComponent,
+    CComponent,
+    HighLightDirective,
+    UnlessDirective,
+  ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  providers: [{ provide: APP_CONFIG, useValue: APP_DI_CONFIG }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

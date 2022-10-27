@@ -10,6 +10,7 @@ import { CComponent } from './components/c/c.component';
 import { HighLightDirective } from './directives/high-light.directive';
 import { UnlessDirective } from './directives/unless.directive';
 import { APP_CONFIG, APP_DI_CONFIG } from './app.config';
+import { ServicesModule } from './services/services.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { APP_CONFIG, APP_DI_CONFIG } from './app.config';
     HighLightDirective,
     UnlessDirective,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [ServicesModule, BrowserModule, AppRoutingModule],
   providers: [{ provide: APP_CONFIG, useValue: APP_DI_CONFIG }],
   bootstrap: [AppComponent],
 })
